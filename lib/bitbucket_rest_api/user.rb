@@ -75,7 +75,7 @@ module BitBucket
     # or has at least read access to.
     # Use this if you're looking for a full list of all of the repositories associated with a user.
     def repositories
-      get_request("/2.0/user/repositories")
+      get_request("/2.0/repositories")
     end
 
     alias :repos :repositories
@@ -86,7 +86,7 @@ module BitBucket
     # Gets a list of the repositories the account follows.
     # This is the same list that appears on the Following tab on your account dashboard.
     def overview
-      get_request("/2.0/user/repositories/overview")
+      get_request("/2.0/repositories/overview")
     end
 
 
@@ -94,7 +94,7 @@ module BitBucket
     # GET the list of repositories on the dashboard
     # Gets the repositories list from the account's dashboard.
     def dashboard
-      get_request("/2.0/user/repositories/dashboard")
+      get_request("/2.0/repositories/dashboard")
     end
 
   end # User

@@ -49,28 +49,28 @@ describe BitBucket::User do
 
   describe '#repositories' do
     it 'sends the request to the right url' do
-      expect(@user).to receive(:request).with(:get, '/2.0/user/repositories', {}, {})
+      expect(@user).to receive(:request).with(:get, '/2.0/repositories', {}, {})
       @user.repositories
     end
   end
 
   describe '#repos' do
     it 'sends the request to the right url' do
-      expect(@user).to receive(:request).with(:get, '/2.0/user/repositories', {}, {})
+      expect(@user).to receive(:request).with(:get, '/2.0/repositories', {}, {})
       @user.repos
     end
   end
 
   describe '#overview' do
     it 'sends the request to the right url' do
-      expect(@user).to receive(:request).with(:get, '/2.0/user/repositories/overview', {}, {})
+      expect(@user).to receive(:request).with(:get, '/2.0/repositories/overview', {}, {})
       @user.overview
     end
   end
 
   describe '#dashboard' do
     it 'sends the request to the right url' do
-      expect(@user).to receive(:request).with(:get, '/2.0/user/repositories/dashboard', {}, {})
+      expect(@user).to receive(:request).with(:get, '/2.0/repositories/dashboard', {}, {})
       @user.dashboard
     end
   end

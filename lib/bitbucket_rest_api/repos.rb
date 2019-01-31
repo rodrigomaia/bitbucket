@@ -231,7 +231,7 @@ module BitBucket
                  #  get_request("/2.0/users/#{user_name}", params)
                  #else
                    # For authenticated user
-                   get_request("/2.0/user/repositories", params)
+                   get_request("/2.0/repositories", params)
                  #end
       return response unless block_given?
       response.each { |el| yield el }
