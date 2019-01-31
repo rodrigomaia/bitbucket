@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require File.expand_path('../lib/bitbucket_rest_api/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = 'bitbucket_rest_api'
+  gem.name          = 'bitbucket_rest_api2'
   gem.authors       = [ "Mike Cochran" ]
   gem.email         = "mcochran@linux.com"
   gem.homepage      = 'https://github.com/vongrippen/bitbucket'
